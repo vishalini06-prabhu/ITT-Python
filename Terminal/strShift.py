@@ -1,0 +1,9 @@
+n=input("Enter a string:")
+opt=''
+for x in n:
+   if x.isalpha():
+      opt=opt+x
+      prev=x
+   else:
+      opt=opt+chr(ord(prev)+int(x))
+print(opt)
