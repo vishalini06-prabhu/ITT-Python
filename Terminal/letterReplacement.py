@@ -1,0 +1,6 @@
+word=input("Enter a word:")
+letter=input("Enter the letter to replace:")
+newletter=input("Enter the new letter to replace:")
+newword=word.replace(letter,newletter)
+print("New word after replacement is",newword)
+print("Number of replacements:",word.count(letter))
