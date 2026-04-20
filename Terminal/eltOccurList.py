@@ -1,0 +1,10 @@
+l1=list(eval(input("Enter list elements:")))
+ele=input("Enter an element:")
+if ele.isdigit():
+   ele=int(ele)
+l2=list(l1)
+print("Entered list:",l1)
+print("First occurence of",ele,"is at position:",l1.index(ele)+1)
+print("Total occurences of ",ele,"is",l1.count(ele))
+l2.reverse()
+print("Last occurence of",ele,"is at position:",len(l2)-(l2.index(ele)))
